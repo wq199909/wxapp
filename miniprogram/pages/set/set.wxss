@@ -1,0 +1,96 @@
+/* pages/set/set.wxss */
+/* 事件、时间列表布局 */
+.pass{
+  position: absolute;
+  top:50rpx;
+  left: 0rpx;
+  height: 100rpx;
+  width:750rpx;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  border-top: 2rpx dashed black;
+  border-bottom: 2rpx dashed black;
+  font-weight: bolder;
+}
+.tip1{
+  position: absolute;
+  height: 100rpx;
+  width:400rpx;
+  line-height: 100rpx;
+}
+.tip2{
+  position: absolute;
+  height: 100rpx;
+  width:400rpx;
+  line-height: 100rpx;
+}
+.container{
+  height: 100vh;
+  width: 750rpx;
+  background: linear-gradient(to bottom right,rgb(64,153,235),rgb(76,85,164));
+}
+.container .time .main .times .timelist,
+.container .thing .main .things .thinglist,
+.container .time .add,
+.container .thing .add{
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  height: 100rpx;
+  width:550rpx;
+  margin-bottom: 10rpx;
+  border:2rpx solid black;
+  background-color:#fff;
+  box-shadow: 0 1rpx 0 rgba(255,255,255,0.24), 0 1rpx 6px rgba(0,0,0,0.45) inset;
+}
+/* 选择器样式 */
+.container .head{
+  position:absolute;
+  height: 100rpx;
+  width:500rpx;
+  border-radius: 50rpx;
+  background-color: #fff;
+  top:200rpx;
+  box-shadow: 0 2rpx 0 rgba(255,255,255,0.24), 0 2rpx 6px rgba(0,0,0,0.45) inset;
+}
+/* 选择器内容 */
+.container .head .timeSet,
+.container .head .thingSet{
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  height: 100rpx;
+  width:250rpx;
+  color:black;
+  border-radius: 50rpx;
+}
+/* 选择器内容位置 */
+.container .head .timeSet{
+  left:0rpx;
+}
+.container .head .thingSet{
+  left:250rpx;
+}
+/* 被选择样式 */
+.container .head .selected{
+  background: linear-gradient(to bottom right,rgb(64,153,235),rgb(76,85,164));
+  border:1rpx solid black;
+}
+/* 列表位置 */
+.container .thing,
+.container .time{
+  position: absolute;
+  top:350rpx;
+  height: 70vh;
+  overflow: auto;
+}
+.container .modal .text{
+  height: 50rpx;
+  width:500rpx;
+}

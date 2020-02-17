@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="logged">
+    <view class="input">
+      <input type='text' bindinput='inputThings' placeholder='添加toDoList' value='{{value}}'></input>
+      <button class='btn' bindtap="submit">提交</button>
+    </view>
+    <view class="main">
+      <view class="todo">
+        <view class="head">正在进行</view>
+        <view class="list">
+          <view class="todolist"  wx:for="{{todolist}}" wx:key="{{index}}" wx:for-index:index="index" wx:for-item="todolist">
+            <view class="thinglist" data-index="{{index}}">
+            <image src="../../images/todo.png"  data-index="{{index}}" bindtap='changetodo'></image><view>{{todolist}}</view><image src="../../images/delete.png" class="delete" bindtap='deletetodo'   data-index="{{index}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="done">
+        <view class="head">已经完成</view>
+        <view class="list">
+          <view class="donelist"  wx:for="{{donelist}}" wx:key="{{index}}" wx:for-index:index="index" wx:for-item="donelist">
+            <view class="thinglist" data-index="{{index}}">
+            <image src="../../images/done.png"  data-index="{{index}}" bindtap='changedone'></image><view>{{donelist}}</view><image src="../../images/delete.png" class="delete" bindtap='deletedone'  data-index="{{index}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

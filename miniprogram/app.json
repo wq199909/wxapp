@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/rank/rank",
+    "pages/match/match",
+    "pages/person/person",
+    "pages/set/set",
+    "pages/record/record",
+    "pages/homes/homes",
+    "pages/room/room",
+    "pages/roomend/roomend"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "莫等闲",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#4099E8",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index1.png"
+      },
+      {
+        "pagePath": "pages/match/match",
+        "text": "房间",
+        "iconPath": "images/match.png",
+        "selectedIconPath": "images/match1.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "备忘录",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank1.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person1.png"
+      }
+    ]
+  },
+  "cloud": true,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取你的位置信息"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

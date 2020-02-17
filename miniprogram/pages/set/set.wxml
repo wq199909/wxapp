@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="pass">
+    <view class="tip1" style='left:{{tip1left}}'>长按删除</view>
+    <view class="tip2" style="left:{{tip2left}}">长按删除</view>
+  </view>
+  <view class="head">
+    <view class="timeSet {{timeSelected}}" bindtap="timeSets">时间</view>
+    <view class="thingSet {{thingSelected}}" bindtap="thingSets">事件</view>
+  </view>
+  <!-- 时间设置 -->
+  <view class="time" style="display: {{timeView}}">
+    <!-- 时间列表 -->
+    <view class="main">
+    <!-- 添加时间 -->
+    <view class="add" bindtap="addTime">添加时间</view>
+      <view class="times" wx:for="{{timelist}}" wx:key="{{index}}" wx:for-index:index="index" wx:for-item="timelist">
+        <view class="timelist" bindlongpress="deleteTime" data-index="{{index}}">{{timelist}}</view>
+      </view>
+    </view>
+    <modal class="modal" hidden="{{notTimeAdd}}" title="时间/min：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+        <input type="number" bindinput="inputTime" maxlength='3' class='text' placeholder="请输入一个小于120的正整数"  value="{{value}}" pattern="[0-9]"/>
+    </modal>
+  </view>
+  <!-- 事件设置 -->
+  <view class="thing" style="display: {{thingView}}">
+    <!-- 事件列表 -->
+    <view class="main">
+    <!-- 添加事件 -->
+    <view class="add" bindtap="addThing">添加事件</view>
+      <view class="things" wx:for="{{thinglist}}" wx:key="{{index}}" wx:for-index:index="index" wx:for-item="thinglist">
+        <view class="thinglist" bindlongpress="deleteThing" data-index="{{index}}">{{thinglist}}</view>
+      </view>
+    </view>
+    <modal class="modal" hidden="{{notThingAdd}}" title="增加事件：" confirm-text="提交" cancel-text="取消" bindcancel="cancelAddThing" bindconfirm="confirmAddThing">  
+      <textarea bindinput="inputThing" class='text' placeholder="请输入事件" value="{{value}}"/>
+    </modal>
+  </view>
+</view>

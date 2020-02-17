@@ -1,0 +1,114 @@
+.container .main{
+  height: 100vh;
+  width:750rpx;
+  background:linear-gradient(to bottom right,rgb(64,153,235),rgb(76,85,164));
+  overflow: hidden;
+}
+.getPostion{
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  width:750rpx;
+  margin:50rpx auto 0 auto;
+}
+.recommendation{
+  display: block;
+  height: 320rpx;
+  margin: 50rpx auto;
+  width: 600rpx;
+  background-color: #fff;
+  border-top: 2rpx solid black;
+  border-bottom: 2rpx solid black;
+}
+.recommendation view{
+  height: 80rpx;
+  width: 598rpx;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  justify-content: center; 
+  border-left: 2rpx solid black;
+  border-right: 2rpx solid black;
+}
+.recommendation .head{
+  background-color: rgb(237,240,240);
+  border-bottom: 1rpx dashed black;
+}
+.recommendation .second{
+  background-color: rgb(249,250,250);
+  border-top: 1rpx dashed black;
+  border-bottom: 1rpx dashed black;
+}
+.input{
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  justify-content: center; 
+  height:100rpx;
+  width:600rpx;
+  margin:0 75rpx;
+  z-index: 99;
+}
+.hidden{
+position: absolute;
+top:-300rpx;
+margin-left: 0;
+height: 100rpx;
+width: 600rpx;
+color:transparent;
+text-shadow:0 0 0 red;
+opacity: 0;
+z-index: -999;
+}
+.in{
+  display: inline-block;
+  line-height: 100rpx;
+  margin: 0 20rpx;
+  border: 2rpx solid black;
+  background-color: #fff;
+  height: 100rpx;
+  width: 100rpx;
+}
+button{
+  display: inline-block;
+  margin: 50rpx 0rpx 10rpx 50rpx;
+  border-radius: 30rpx;
+  height: 100rpx;
+  width: 300rpx;
+}
+.tip{
+  color:#eee;
+  display: flex;
+  height: 50rpx;
+  width:750rpx;
+  text-align: center;
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 30rpx;
+}
+.hasin{
+  margin-top: 10rpx;
+  height: 250rpx;
+  width: 600rpx;
+  margin-left: 75rpx;
+}
+.notgetpos{
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  justify-content: center; 
+  margin: 50rpx 0;
+  height: 100rpx;
+  width: 750rpx;
+}
+.roomname{
+  height: 100rpx;
+  padding-left: 30rpx;
+  border: 2rpx solid black;
+  margin: 50rpx 75rpx;
+  width: 570rpx;
+  background-color: #fff;
+  box-shadow: 0 1rpx 0 rgba(255,255,255,0.24), 0 1rpx 6px rgba(0,0,0,0.45) inset;
+  border-radius: 10rpx;
+}

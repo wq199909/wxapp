@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="main">
+    <view wx:for="{{record}}" wx:for-item="records" wx:key="{{index}}">
+      <view class="{{records.state}}">
+        <view class="time">{{records.time}}</view>
+        <view class="thing">{{records.thing}}</view>
+        <view class="duration">{{records.duration}}</view>
+      </view>
+    </view>
+  </view>
+</view>

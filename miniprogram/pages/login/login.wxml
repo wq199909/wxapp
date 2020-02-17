@@ -1,0 +1,16 @@
+<!-- 登录授权页面 -->
+<view class="login">
+  <!-- 微信小程序可使用 -->
+  <view wx:if="{{versionSupport}}" class="support">
+    <view class="head">
+      <image src="../../images/user-unlogin.png"></image>
+    </view>
+    <view class="content">
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息（昵称，头像等）</text>
+    </view>
+    <button class="btn" type="primary" open-type="getUserInfo" lang="zh-CN" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    </view>
+<!-- 微信版本低，不支持此小程序 -->
+  <view wx:else class="notSupport">请升级你的微信版本</view>
+</view>

@@ -1,0 +1,75 @@
+<!-- 主要功能页 -->
+<view class="container">
+  <view class="main">
+    <view class="help" bindtap='help'>
+      <image src="../../images/help.svg"></image>
+    </view>
+    <view class="Hourglass" style="display:{{canvashide}}">
+      <canvas style="width: 600rpx; height: 300rpx;" canvas-id="timeCanvas"></canvas>
+      <view class="timeleft">{{timeleftMin}}:{{timeleftSec}}</view>
+    </view>
+    <view class="select">
+      <picker class="timeSelect" bindchange="selectTime" value="{{index}}" range="{{timeList}}" >
+        <view hover-class='bg-grey' class='choseQuestion' >
+          {{timeSelector}}
+        </view>
+      </picker>
+    </view>
+    <view class="select">
+      <picker class="thingSelect" bindchange="selectThing" value="{{index}}" range="{{thingsList}}">
+        <view hover-class='bg-grey' class='choseQuestion' >
+          {{thingSelector}}
+        </view>
+      </picker>
+    </view>
+    <button class="btn" type="primary" bindtap="startOrend">{{startOrEnd}}</button>
+  </view>
+  <view class="txt">
+    <view class="txt1">
+    <text style="display:{{mo}}">莫</text>
+    <text style="display:{{deng}}">等</text>
+    <text style="display:{{xian}}">闲</text>
+    </view>
+    <view class='txt2'>
+    <text style="display:{{bai}}">白</text>
+    <text style="display:{{le}}">了</text>
+    <text style="display:{{shao}}">少</text>
+    <text style="display:{{nian}}">年</text>
+    <text style="display:{{tou}}">头</text>
+    </view>
+    <view class='txt3'>
+    <text style="display:{{kong}}">空</text>
+    <text style="display:{{bei}}">悲</text>
+    <text style="display:{{qie}}">切</text>
+    </view>
+  </view>
+</view>
+<view class="helps" style="top:{{helpstop}}">
+<view class="top"><text bindtap='outhelp'>X</text></view>
+<view class="main">
+  <view class="title">关于我们：</view>
+  <view>莫等闲时间是一款专注于提高你的专注力的小程序，拒绝低头一族，
+我们希望你可以将注意力从手机转移到生活与远方，管理自己的时间，提
+高工作效率，不让时间从指尖划过，珍惜每一分钟。</view>
+  <view class="title">使用说明：</view>
+  <view class="key">主页</view>
+  <view>你需要选择要做的事件与专注的时长，点击开始来开始一段专注时间，
+我们会为你记录你每一次的专注时间，包括成功和失败。在’我的‘界面中
+你可以查看自己每次专注的记录。初始事件与时间有几个可选项，如果你要
+更改事件与时间，你需要在’我的‘界面中的设置里进行设置。</view>
+  <view  class="key">房间</view>
+  <view>你可以创建自己的房间也能加入别人的房间，在房间里能够看到所有人
+的头像，房间的专注时长固定为45分钟，这是一节课的时长，房主在45分钟
+后可以查看所有人的个人信息，显然这个功能利于学生与老师。</view>
+  <view class="key">备忘录</view> 
+<view>莫等闲时间也为您提供了一个备忘录，合理规划自己的时间。</view>
+       <view  class="key">我的</view>
+<view>在这里你可以进行一些设置与查看，包括自己的专注总时长、专注记录、
+自己的个人信息以及想添加或删除的专注时间与事件。</view>
+       <view>p.s.在使用过程中，不要关闭小程序，否则就会有一次失败的记录。</view>
+<view  class="title">联系我们：</view>
+<view>微信：wq2749374330</view>       
+<view>邮箱：2749374330@qq.com</view>
+<view>HUSTer  出品</view>
+</view>
+</view>

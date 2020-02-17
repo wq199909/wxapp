@@ -1,0 +1,46 @@
+/* 未登录状态图片位置 */
+.login .support .head{
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;  
+}
+/* 未登录状态图片大小 */
+.login .support .head image {
+  width: 200rpx;
+  height: 200rpx;
+}
+/* 未登录状态文字位置 */
+.login .support .content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+/* 未登录文字样式 */
+.login .support .content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+/* 授权登录按钮样式 */
+.login .support .btn {
+  border-radius: 80rpx;
+  position: absolute;
+  height: 100rpx;
+  width: 500rpx;
+  left:125rpx;
+  bottom:100rpx;
+  font-size: 50rpx;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;  
+}
+/* 版本不支持提示信息样式 */
+.login .notSupport{
+  margin-top:50vh;
+}

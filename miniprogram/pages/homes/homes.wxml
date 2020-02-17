@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="trueName">
+    <view>姓名</view>
+    <input type='text' bindinput='inputtruename' placeholder='请输入姓名' value='{{nam}}'></input>
+  </view>
+  <view class="schoolName">
+    <view>学校名</view>
+    <input type='text' bindblur='hidsch' bindinput='inputschool' placeholder='请输入学校名' value='{{sch}}'></input>
+  </view>
+  <view class="rec1" style='display:{{rec1}}'>
+    <view wx:for="{{list1}}" wx:for-item="list1"  wx:key="{{index}}">
+      <view class="list" data-value="{{list1}}" bindtap='rec1'>{{list1}}</view>
+    </view>
+  </view>
+  <view class="major">
+    <view>专业</view>
+    <input type="text" bindblur='hidmaj' bindinput='inputname' placeholder='请输入专业' value='{{maj}}'></input>
+  </view>
+  <view class="rec2"  style='display:{{rec2}}'>
+    <view wx:for="{{list2}}" wx:for-item="list2"  wx:key="{{index}}">
+      <view class="list" data-value="{{list2}}" bindtap='rec2'>{{list2}}</view>
+    </view>
+  </view>
+  <view class="number">
+    <view>学号</view>
+    <input type='text' bindinput='inputnumber' placeholder='请输入学号' value='{{num}}'></input>
+  </view>
+</view>

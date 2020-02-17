@@ -1,0 +1,33 @@
+<view class="container">
+  <view class='toast-box' hidden='{{!ifName}}'>
+      <view class='toastbg'></view>
+        <view class='showToast'>
+            <view class='toast-title'>
+                <text>输入你的真实姓名</text>
+            </view>
+            <view class='toast-main'>
+                <view class='toast-input'>
+                    <input placeholder='取消退出，确定加入' bindinput='setValue' data-name='stuEidtName'></input>
+                </view>
+            </view>
+            <view class='toast-button'>
+                <view class='button1'>
+                    <button catchtap='cancel'>取消</button>
+              </view>
+              <view class='button2'>
+                <button catchtap='confirm'>确定</button>
+              </view>
+          </view>
+      </view>
+  </view>
+  <view class="roomname"><text>房间名</text><text>{{roomname}}</text></view>
+  <view class="roomid"><text>房间编号</text><text>{{roomid}}</text></view>
+  <view class="time">{{time.min}}:{{time.s}}</view>
+  <view class="people">
+    <view wx:for="{{images}}" wx:for-item="image"  wx:key="{{index}}">
+      <image src="{{image}}"></image>
+    </view>
+  </view>
+  <button style='display:{{icreate}}' type="primary" bindtap='begin'>{{btn}}</button>
+  <button style='display:{{iadd}}' type="primary" bindtap='out'>退出房间</button>
+</view>

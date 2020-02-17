@@ -1,0 +1,21 @@
+<view class="container">
+<view class="logged">
+  <view class="personal">
+    <view class="picture">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="name">
+      <open-data type="userNickName"></open-data>
+      <view style='color:#eeeeee70'>专注时长:  <text style='color:#000000'>{{timeall}}</text>
+      </view>
+    </view>
+    <view class="sign">
+      <view>个性签名</view>
+      <textarea class="text" bindinput="inputThing" placeholder="输入你的个性签名" value="{{sign}}"></textarea> 
+    </view>
+  </view>
+  <view class="datas" bindtap="record">记录</view>
+  <view class="home" bindtap="home">个人信息</view>
+  <view class="sets" bindtap="sets">设置</view>
+</view>
+</view>

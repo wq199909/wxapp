@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="main">
+    <view wx:for="{{record}}" wx:for-item="records" wx:key="{{index}}" wx:for-index:index="index">
+      <view bindtap="showtip" class="{{records.state}}" data-index="{{index}}">
+        <image src="{{records.image}}"></image>
+        <view class="box">
+        <view class="name">{{records.name}}</view>
+        <view class="duration">{{records.duration}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button type="primary" bindtap='destroy'>销毁房间并退出</button>
+</view>

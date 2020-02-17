@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- 已登录，显示功能部分 -->
+  <view class="main">
+  <view class="getPostion">
+    <switch bindchange='changetap'>定位</switch>
+  </view>
+  <view wx:if="{{notgetpos}}">
+    <input class="roomname" type="text" placeholder='请输入你创建的房间名' bindinput='inputname'/>
+    <view class="recommendation">
+      <view class="head">点击下列推荐数字直接创建房间：</view>
+      <view id="{{recommendation1}}" bindtap='createroom' data-index='1'>房间1：{{recommendation1}}</view>
+      <view class="second" id="{{recommendation2}}" bindtap='createroom' data-index='2'>房间2：{{recommendation2}}</view>
+      <view id="{{recommendation3}}" bindtap='createroom' data-index='3'>房间3：{{recommendation3}}</view>
+    </view>
+    <view class="tip">输入数字加入或创建房间</view>
+  <view class="input" bindtap="focusin">
+    <input focus="{{focusinput}}"type="number" pattern="[0-9]" maxlength='4' bindinput='inputnum' class="hidden"/>
+    <view class="in">{{input1}}</view>
+    <view class="in">{{input2}}</view>
+    <view class="in">{{input3}}</view>
+    <view class="in">{{input4}}</view>
+  </view>
+  <button type='primary' bindtap='addroom'>加入房间</button>
+  <button id="btn" type='primary' bindtap="createroom" data-index='0'>创建房间</button>
+  </view>
+  <view wx:else class="notgetpos">
+    <text>此功能需要打开定位实现</text>
+  </view>
+  </view>
+</view>

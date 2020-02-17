@@ -1,0 +1,138 @@
+/* 主页背景样式 */
+.container .main{
+  height:100vh;
+  width:750rpx;
+  background:linear-gradient(to bottom right,rgb(64,153,235),rgb(76,85,164));
+}
+/* 帮助按钮位置 */
+.container .main .help{
+  position: absolute;
+  right:50rpx;
+  top:50rpx;
+}
+/* 帮助按钮大小 */
+.container .main .help image{
+  width:80rpx;
+  height:80rpx;
+}
+/* 时间、时间选择样式 */
+.container .main .select .thingSelect view,
+.container .main .select .timeSelect view{
+  position: absolute;
+  display: flex;
+  width:350rpx;
+  height: 100rpx;
+  border:2rpx solid black;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 5rpx 5rpx 5rpx #eee;
+}
+/* 时间选择器位置 */
+.container .main .select .timeSelect view{
+  top:450rpx;
+  left:200rpx;
+}
+/* 时间选择器位置 */
+.container .main .select .thingSelect view{
+  top:650rpx;
+  left:200rpx;
+}
+/* 点击时间、事件选择时样式 */
+.container .main .select .timeSelect .bg-grey,
+.container .main .select .thingSelect .bg-grey{
+  background-color: #eeeeee;
+}
+/* 开始按钮样式 */
+.container .btn{
+  position: absolute;
+  top:850rpx;
+  left:125rpx;
+  height: 100rpx;
+  width:500rpx;
+  border-radius: 50rpx;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+}
+/* 倒计时样式 */
+.container .main .Hourglass view{
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  width:150rpx;
+  top:50rpx;
+  left:300rpx;
+  color: black;
+}
+/* 画布 */
+.container .main .Hourglass canvas{
+  position: absolute;
+  z-index: 1;
+  top:100rpx;
+  left:75rpx;
+}
+.container .txt{
+  position: absolute;
+  top:0rpx;
+  left:0rpx;
+}
+.container .txt view{
+  position: absolute;
+  width: 50rpx;
+  top:50rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+}
+.container .txt .txt3{
+  left:50rpx;
+}
+.container .txt .txt2{
+  left:120rpx;
+}
+.container .txt .txt1{
+  left:190rpx;
+}
+.helps{
+  position: absolute;
+  height: 80vh;
+  width:600rpx;
+  left:43rpx;
+  background-color: #fff;
+  border: 2rpx solid black;
+  padding: 30rpx;
+  z-index: 999;
+}
+.helps .top{
+  border-bottom: 2rpx dashed black;
+  padding-left: 550rpx;
+  height: 7vh;
+  line-height: 7vh;
+}
+.help .top text{
+  display: block;
+  width:50rpx;
+  height: 10vh;
+  line-height: 10vh;
+}
+.helps .main{
+  overflow: auto;
+  height: 75vh;
+}
+.helps .main .title{
+  font-size: 50rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: bolder;
+  margin-top:20rpx;
+}
+.helps .main .key{
+  font-weight: bold;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
